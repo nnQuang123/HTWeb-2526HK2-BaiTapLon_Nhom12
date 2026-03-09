@@ -1,3 +1,39 @@
+.banner {
+    aspect-ratio: 1280/ 50;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #E30019;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.main-header .container-xxl{
+    display: grid;
+    grid-template-columns: 15% 10% 40% 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sub-header .container-xxl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner img {
     height: 100%;
     width: 100%;

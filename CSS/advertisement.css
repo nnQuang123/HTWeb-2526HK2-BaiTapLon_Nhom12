@@ -1,0 +1,76 @@
+.advertisement {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 7px;
+}
+
+.main-ad {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    overflow: hidden;
+    aspect-ratio: 12 / 6; 
+    border-radius: 10px;
+}   
+
+.main-ad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub-ad {
+    aspect-ratio: 10 / 5; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.sub-ad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-ad .carousel-control-prev,
+.main-ad .carousel-control-next {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);   
+    opacity: 0;
+}
+
+.main-ad .carousel-control-prev {
+    left: 10px;
+}
+
+.main-ad .carousel-control-next {
+    right: 10px;
+}
+
+.main-ad:hover .carousel-control-prev,
+.main-ad:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    transform: scale(1.3);
+    transition: transform 0.1s;
+}
+
+.main-ad .carousel-item {
+    transition: transform 0.8s;
+}
+
+.main-ad:hover {
+    transform: scale(1.01);
+    transition: transform 0.1s;
+}
+
+.sub-ad:hover {
+    transform: scale(1.02);
+    transition: transform 0.1s;
+}
