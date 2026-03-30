@@ -5,17 +5,150 @@
     top: 20px;
     border: solid black;
     list-style: none;
-    border-radius: 50px;
+} 
+
+
+.menu-trai {
+  width: 270px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px 0 0 6px;
+  overflow: visible;
+  position: relative;
+  z-index: 3;
 }
 
-.menu-link {
-    padding: 5px 5px;
-    font-size: 13px inter;
-    background-color: white;
-    color: black;
-    font-family: sans-serif;
-
-    a{
-        text-decoration: none;
-    }
+.ds-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+.muc-menu {
+  position: relative;
+  border-bottom: 1px solid #efefef;
+  list-style: none;
+}
+
+.muc-menu:last-child {
+  border-bottom: none;
+}
+
+.link-menu {
+  width: 100%;
+  background: #fff;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  color: #111;
+  text-decoration: none;
+}
+
+.link-menu:hover {
+  color: #111;
+}
+
+.muc-trai {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+}
+
+.muc-trai i {
+  font-size: 22px;
+  color: #333;
+  width: 24px;
+}
+
+.mui-ten {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.muc-menu:hover > .link-menu,
+.muc-menu.active > .link-menu {
+  background: #ff2400;
+  color: #fff;
+  position: relative;
+}
+
+.muc-menu:hover > .link-menu .muc-trai i,
+.muc-menu:hover > .link-menu .mui-ten,
+.muc-menu.active > .link-menu .muc-trai i,
+.muc-menu.active > .link-menu .mui-ten {
+  color: #fff;
+}
+
+.muc-menu:hover > .link-menu::after,
+.muc-menu.active > .link-menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 0;
+  height: 0;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-left: 22px solid #ff2400;
+}
+
+.mega-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 1230px;
+  min-height: 100%;
+  background: #f3f3f3;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  padding: 22px 26px;
+  display: none;
+  z-index: 2;
+}
+
+.muc-menu:hover > .mega-menu,
+.muc-menu.active > .mega-menu {
+  display: block;
+}
+
+.luoi-mega {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px 38px;
+}
+
+.cot-mega h4 {
+  color: #ff1f2d;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.cot-mega a {
+  display: block;
+  color: #2c2c2c;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.cot-mega a:hover {
+  color: #ff2400;
+}
+
+@media (max-width: 1400px) {
+  .mega-menu {
+    width: 1000px;
+  }
+
+  .luoi-mega {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+

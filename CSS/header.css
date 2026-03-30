@@ -183,6 +183,36 @@
     border-radius: 10px;
 }
 
-.menu *:hover {
+/* .menu *:hover {
     background-color: #a01020;
+} */
+
+.menu {
+  position: relative;
+}
+
+.menu-danh-muc {
+  position: relative;
+}
+
+.nut-danh-muc {
+  border: none;
+  background: #be1529;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hop-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  display: none;
+  z-index: 2000;
+}
+
+.hop-menu.mo {
+  display: block;
 }
