@@ -15,3 +15,15 @@ body {
   width: 100%;
   background-color: violet;
 }
+
+.overlay{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.overlay.mo {
+  display: block;
+}

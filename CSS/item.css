@@ -1,6 +1,6 @@
 .section .carousel-control-next,
-.section .carousel-control-prev{
-    height: 35px;   
+.section .carousel-control-prev {
+    height: 35px;
     width: 35px;
     background-color: #ECECEC;
     color: black;
@@ -8,7 +8,7 @@
 }
 
 .section .carousel-control-next:hover,
-.section .carousel-control-prev:hover{
+.section .carousel-control-prev:hover {
     color: red;
 }
 
@@ -16,3 +16,10 @@
     transition: transform 0.8s;
 }
 
+.section .card {
+    transition: transform 0.3s;
+}
+
+.section .card:hover {
+    transform: scale(1.04);
+}

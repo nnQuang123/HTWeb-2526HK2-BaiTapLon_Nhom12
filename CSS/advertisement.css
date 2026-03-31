@@ -74,3 +74,9 @@
     transform: scale(1.02);
     transition: transform 0.1s;
 }
+
+.aside-left, .aside-right{
+    position: sticky;
+    top: 100px;
+    height: fit-content;   
+}

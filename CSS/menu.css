@@ -1,5 +1,5 @@
 .menu-trai {
-  width: 270px;
+  width: 220px;
   background-color: white;
   border: 1px solid rgb(217, 217, 217);
   border-radius: 6px 0 0 6px;
@@ -34,6 +34,10 @@
   text-decoration: none;
 }
 
+.link-menu span{
+  font-size: 12px;
+}
+
 .link-menu:hover {
   color: black;
 }
@@ -46,9 +50,8 @@
 }
 
 .muc-trai i {
-  font-size: 22px;
+  font-size: 16px;
   color: rgb(51, 51, 51);
-  width: 24px;
 }
 
 .mui-ten {
@@ -88,7 +91,7 @@
   position: absolute;
   left: 100%;
   top: 0;
-  width: 1230px;
+  width: 1100px;
   min-height: 100%;
   background: rgb(243, 243, 243);
   border: 1px solid rgb(217, 217, 217);
@@ -112,7 +115,7 @@
 
 .cot-mega h4 {
   color: rgb(255, 31, 45);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 14px;
 }
@@ -122,7 +125,7 @@
   color: rgb(44, 44, 44);
   text-decoration: none;
   margin-bottom: 12px;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 1.35;
 }
 
